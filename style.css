@@ -163,6 +163,59 @@ body {
   background-position: 50% 50%;
 }
 
+.services {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 60rem);
+}
+
+.services__graphic-design,
+.services__photography {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 10rem;
+  height: 60rem;
+}
+
+.services__graphic-design {
+  background-image: url(images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+}
+
+.services__photography {
+  background-image: url(images/desktop/image-photography.jpg);
+  background-size: cover;
+}
+
+.services__graphic-design h3,
+.services__photography h3 {
+  font-family: var(--ff-heading);
+  font-size: 2.8rem;
+}
+
+.services__graphic-design p,
+.services__photography p {
+  font-weight: var(--fw-medium);
+  text-align: center;
+  max-width: 40rem;
+  word-wrap: break-word;
+  color: var(--clr-neutral-300);
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.project-gallery__image img {
+  width: 100%;
+}
+
 /* Attribution */
 .attribution {
   font-size: 11px;
