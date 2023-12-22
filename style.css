@@ -5,6 +5,7 @@
   --clr-primary-300: hsl(167, 40%, 24%);
   --clr-primary-200: hsl(198, 62%, 26%);
   --clr-primary-100: hsl(168, 34%, 41%);
+  --clr-primary-100-a: hsl(168, 34%, 64%);
 
   /* Neutral  */
   --clr-neutral-400: hsl(212, 27%, 19%);
@@ -273,9 +274,41 @@ body {
 footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  background-color: var(--clr-primary-100);
+  gap: 5.6rem;
+
+  background-color: var(--clr-primary-100-a);
   color: var(--clr-primary-300);
+
+  padding: 6.4rem 0;
+}
+
+/* .footer__logo path {
+  fill: var(--clr-neutral-300);
+} */
+
+.footer__nav ul {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.footer__nav li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: var(--fw-medium);
+}
+
+.footer__nav a:link,
+.footer__nav a:visited {
+  text-decoration: none;
+  color: var(--clr-primary-300);
+}
+
+.footer__icons {
+  display: flex;
+  gap: 2.4rem;
 }
 
 /* Attribution */
