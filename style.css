@@ -35,6 +35,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -406,9 +407,24 @@ footer {
   color: var(--clr-primary-300);
 }
 
+.footer__nav a:hover,
+.footer__nav a:active {
+  text-decoration: none;
+  color: var(--clr-neutral-00);
+}
+
 .footer__icons {
   display: flex;
   gap: 2.4rem;
+}
+
+.footer__icons svg {
+  fill: var(--clr-primary-300);
+  cursor: pointer;
+}
+
+.footer__icons svg:hover {
+  fill: var(--clr-neutral-00);
 }
 
 /* Attribution */
